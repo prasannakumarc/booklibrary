@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" >Library Managment</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink='/'>Home</a>
+        </li>
+        
+        <li class="nav-item active">
+          <a class="nav-link" routerLink='register'>Register</a>
+        </li>
+        <!-- <li class="nav-item active">
+          <a class="nav-link" routerLink='contact'>contact</a>
+        </li> -->
+        
+         <!-- <li class="nav-item active">
+          <a class="nav-link" routerLink='modifybook'>modifybook</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink='bookupdatebyadmin/:bookId'>updatebyadmin</a>
+      </li> 
+      <li class="nav-item active">
+        <a class="nav-link" routerLink='bookaddbyadmin'>addbookbyadmin</a>
+      </li>  -->
+      <!-- <li class="nav-item active">
+        <a class="nav-link" routerLink='updateuser/:userId'>updateUser</a>
+      </li>  -->
+      
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Login Here
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" routerLink='login'>User Login</a>
+          <a class="dropdown-item" routerLink='adminlogin'>Admin Login</a>
+          
+        </div>
+      </div>
+      
+     
+    </ul>
+
+    </div>
+  </nav>
+  <router-outlet></router-outlet>

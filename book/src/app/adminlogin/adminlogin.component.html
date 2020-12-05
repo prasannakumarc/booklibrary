@@ -1,0 +1,28 @@
+<header>
+    <div class="card col-md-4 offset-md-4">
+      <div class="card-body">
+          <form class="form-conatiner" #form="ngForm" (ngSubmit)="adminLogin()">
+            <h1>Admin Login</h1>
+            <small class="danger" style="color: red;">{{msg}}</small>
+            <label>
+              <input type="text" name="email" class="col" placeholder=" "  [(ngModel)]="admin.email" >
+              <span>Enter  AdminId</span>
+              
+            </label>
+            <label>
+              <input type="password" name="password" class="col" placeholder=" "  [(ngModel)]= "admin.password">
+              <span>Enter the Password</span>
+              
+            </label>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-success btn-block">Login</button>
+            </form>
+      
+      </div>
+   
+    </div>
+  </header>
+  

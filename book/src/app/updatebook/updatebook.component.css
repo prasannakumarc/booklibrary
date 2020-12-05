@@ -1,0 +1,25 @@
+header{
+    background-color:slategray;
+    /* margin-top: 150px; */
+
+}
+.form-conatiner
+{
+    border: 1px springgreen;
+    padding: 50px 60px;
+    
+    -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color:white;
+  }
+  .no-outline:focus {
+    outline: none;
+  }

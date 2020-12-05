@@ -1,0 +1,65 @@
+<header>
+    <div class="card col-md-4 offset-md-4">
+        <div class="card-body">
+         
+            <form class="form-conatiner" [formGroup]="regForm" (ngSubmit)="postDatatoservice(regForm)"> 
+                <h1>Registration</h1>
+                <div class="form-group">
+                  <label>
+                    <input type="text" name="firstname" class="form-control"  placeholder=" " formControlName="firstName" >
+                    <span>Firstname</span>
+                    <div style="color: red;" *ngIf="regForm.get('firstName').touched && regForm.get('firstName').value<4 && regForm.get('firstName').value!=null">Firstname should have atleast 4 letters</div>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="text" name="lastname" class="form-control" placeholder=" " formControlName="lastName">
+                    <span>Lastname</span>
+                    <div style="color: red;" *ngIf="regForm.get('lastName').touched && regForm.get('lastName').value<4 && regForm.get('lastName').value!=null">Lastname should have atleast 4 letters</div>
+                   
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="text" name="username" class="form-control" placeholder=" " formControlName="userName">
+                    <span>Username</span>
+                    <div style="color: red;" *ngIf="regForm.get('userName').touched && regForm.get('userName').value<6 && regForm.get('userName').value!=null">Username should have atleast 6 letters</div>
+                   
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="text" name="gender" class="form-control" placeholder=" " formControlName="gender">
+                    <span>Gender</span>
+                    <div style="color: red;" *ngIf="regForm.get('gender').touched &&  regForm.get('gender').value!=null">Must Enter</div>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="text" name="email" class="form-control" placeholder=" " formControlName="email">
+                    <span>Email</span>
+                    <div style="color: red;" *ngIf="regForm.get('email').touched && regForm.get('email').value<4 && regForm.get('email').value!=null">Must Enter Email</div>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="password" name="password" class="col" placeholder=" " formControlName="password">
+                    <span>Password</span>
+                    <div style="color: red;" *ngIf="regForm.get('password').touched && regForm.get('password').value<4 && regForm.get('password').value!=null">Password should not be empty</div>
+                  </label>
+                </div>
+                
+                <div>
+                    <button type="submit" class="btn btn-secondary">Register</button>
+                </div>
+             </form>
+                  
+          
+        </div>
+    
+    
+    
+    </div>
+    
+</header>
+

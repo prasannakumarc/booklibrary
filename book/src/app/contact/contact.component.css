@@ -1,0 +1,19 @@
+p{
+    color: white;
+    font-synthesis: style weight;
+    font-size: large;
+
+}
+h2{
+    color:crimson;
+}
+h6{
+    color: crimson;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url('/assets/images/bg.jpg');
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
